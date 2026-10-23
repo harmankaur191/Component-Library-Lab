@@ -14,7 +14,8 @@ export default function UserProfileCard(props:UserProfileCardProps){
         <h1>{props.user.name}</h1>
         <h2>{props.user.email}</h2>
         <p>{props.user.role}</p>
-        <button onClick={()=>props.onEdit(id)} className="p-4 bg-blue-500 mx-auto flex max-w-sm text-white-700" >Edit Profile</button>
+        <button onClick={()=>props.onEdit(id)} className="p-4 bg-blue-500 mx-auto flex max-w-sm text-white" >Edit Profile</button>
+        <div>{props.children}</div>
         </div>
          
     </div>)
